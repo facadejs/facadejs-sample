@@ -65,4 +65,18 @@
 
     });
 
+    controls.on('hold', 'stick_axis_left', function (e) {
+
+        if (e.value[0] < -0.5) {
+
+            controls.trigger('hold', 'd_pad_left');
+
+        } else if (e.value[0] > 0.5) {
+
+            controls.trigger('hold', 'd_pad_right');
+
+        }
+
+    });
+
 }());
