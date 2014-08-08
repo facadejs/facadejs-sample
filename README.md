@@ -2,13 +2,9 @@
 
 #Facade.js Sample Project
 
-##Install on Heroku
-
-Heroku has just released a new feature called **Deploy to Heroku** which (providing you have an account) will automatically clone and deploy a git repo on Heroku. Click the button below to get started.
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-##Install Locally
+##Install
 
 To install locally first clone the repo from GitHub:
 
@@ -24,6 +20,8 @@ Then install dependencies through both npm and bower.
 $ cd facadejs-sample/
 $ npm install
 ```
+
+##Run
 
 Providing that you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed you can start the sample applications with this command:
 
