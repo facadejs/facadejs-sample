@@ -2,6 +2,9 @@
     "name": "facade.js-sample",
     "description": "Sample application built using Facade.js and available plugins.",
     "version": "0.0.1",
+    "engines": {
+        "node": "0.10.x"
+    },
     "main": "web.js",
     "license": "MIT",
     "dependencies": {
