@@ -3,7 +3,7 @@
     "description": "Sample application built using Facade.js and available plugins.",
     "version": "0.0.1",
     "dependencies": {
-        "facade.js": "0.3.0-beta.5",
+        "facade.js": "0.3.0-beta.6",
         "facadejs-Box2D-plugin": "neogeek/facadejs-Box2D-plugin",
         "gamepad.js": "neogeek/gamepad.js",
         "jquery": "2.1.1"
