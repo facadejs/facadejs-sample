@@ -1,19 +1,26 @@
 /*jslint browser: true */
 /*globals Facade, Gamepad, $ */
 
-(function () {
+define(function (require) {
 
     'use strict';
 
-    var stage = new Facade(document.querySelector('canvas')),
+    var $ = require('jquery'),
+        Facade = require('facade'),
+        Gamepad = require('gamepadjs'),
+        stage = new Facade(document.querySelector('canvas')),
         controls = new Gamepad(),
-        world = new Facade.Entity().Box2D('createWorld', { canvas: stage.canvas, gravity: [ 0, 20 ] }),
+        world,
         data,
         objects = {
             level: [],
             items: [],
             player: null
         };
+
+    require('facadejs-Box2D-plugin');
+
+    world = new Facade.Entity().Box2D('createWorld', { canvas: stage.canvas, gravity: [ 0, 20 ] });
 
     function generateEntityFromObject(data) {
 
@@ -85,4 +92,4 @@
 
     });
 
-}());
+});
